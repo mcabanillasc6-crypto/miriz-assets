@@ -366,10 +366,14 @@ html.embed .stage .zoomctl { top: 8px; right: 8px; }
 html.embed #outfit, html.embed #p-prendas .pfoot { display: none; }
 html.embed .sgdemo { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
 html.embed #p-prendas .pbody { padding-bottom: 16px; }
+
+/* ===== B42 · embebido: sin selectores/guías duplicados cuando la tienda vende la prenda ===== */
+html.embed[data-sup-store="1"] #pr-body { display: none; }
+html.embed[data-sup-store="1"] #pr-desc { display: none; }
 </style></head><body>
 <div class="shop" id="shop">
   <div class="topbar" role="banner">
-    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B41</span></div>
+    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B42</span></div>
     <div class="pagetitle">Probador 3D</div>
     <button class="cartbtn" id="cartbtn" aria-label="Abrir carrito (0 prendas)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="lbl2">Carrito</span><span class="n" id="cartn">0</span></button>
   </div>
@@ -384,7 +388,7 @@ html.embed #p-prendas .pbody { padding-bottom: 16px; }
       <div class="pfoot"><button class="primary" id="save">Guardar mi avatar</button><p class="note" id="save-note" role="status"></p></div>
     </section>
     <section class="stage" aria-label="Avatar 3D">
-      <span class="embedtag">build B41</span>
+      <span class="embedtag">build B42</span>
       <canvas id="c" aria-label="Vista 3D del avatar: arrastre para girar, pellizque o use los botones + y − para acercar"></canvas>
       <div class="hud"><div class="badge"></div><div class="stats" id="stats"></div></div>
       <div class="zoomctl" id="zoomctl"><button id="zin" aria-label="Acercar">+</button><button id="zout" aria-label="Alejar">−</button></div>
@@ -443,6 +447,6 @@ html.embed #p-prendas .pbody { padding-bottom: 16px; }
       <details class="more" id="techface"><summary>Controles técnicos del rostro (equipo)</summary><p class="note">Los 31 controles internos. Las opciones de «Rostro y piel» los combinan; moverlos aquí no cambia la elección guardada.</p></details>
     </div>
   </div>
-<script>window.MIRIZ_GLB_EXT = ".glb";   /* B41: el visor estático solo trae .glb (no hay .b64.txt) */</script>
-<script type="module" src="app.js?v=B41"></script><script type="module" src="shop.js?v=B41"></script>
+<script>window.MIRIZ_GLB_EXT = ".glb";   /* B42: el visor estático solo trae .glb (no hay .b64.txt) */</script>
+<script type="module" src="app.js?v=B42"></script><script type="module" src="shop.js?v=B42"></script>
 </body></html>
