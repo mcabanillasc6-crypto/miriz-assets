@@ -888,7 +888,7 @@
     "XL"
    ],
    "geom": {
-    "hemFrac": 0.066,
+    "hemFrac": 0.09,
     "riseOff": -0.03,
     "minM": 0.0035,
     "maxM": 0.05,
@@ -1027,14 +1027,14 @@
    },
    "colors": [
     {
-     "id": "champan",
-     "label": "Champán",
-     "hex": "#d9c3a1"
-    },
-    {
      "id": "negro",
      "label": "Negro",
      "hex": "#1a1a1c"
+    },
+    {
+     "id": "champan",
+     "label": "Champán",
+     "hex": "#d9c3a1"
     },
     {
      "id": "rosa-empolvado",
@@ -1124,6 +1124,11 @@
     ]
    },
    "colors": [
+    {
+     "id": "blanco",
+     "label": "Blanco",
+     "hex": "#f6f4f0"
+    },
     {
      "id": "marfil",
      "label": "Blanco marfil",

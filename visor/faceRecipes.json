@@ -26,66 +26,67 @@
      "id": "ovalado",
      "label": "Ovalado",
      "w": {
-      "face.head-oval": 0.95,
-      "face.chin-width": -0.15,
-      "face.cheek-volume": -0.05
+      "face.head-oval": 0.8,
+      "face.chin-width": -0.1,
+      "face.cheek-volume": -0.05,
+      "face.head-fat": -0.1
      }
     },
     {
      "id": "redondo",
      "label": "Redondo",
      "w": {
-      "face.head-round": 0.75,
-      "face.cheek-volume": 0.22,
-      "face.chin-height": -0.3,
-      "face.jaw": -0.1,
-      "face.head-width": 0.1
+      "face.head-round": 0.5,
+      "face.cheek-volume": 0.1,
+      "face.chin-height": -0.12,
+      "face.jaw": -0.15,
+      "face.head-width": 0.0,
+      "face.head-fat": -0.05
      }
     },
     {
      "id": "corazon",
      "label": "Corazón",
      "w": {
-      "face.head-heart": 0.95,
-      "face.chin-width": -0.8,
-      "face.cheekbones": 0.5,
-      "face.forehead": 0.3,
-      "face.jaw": -0.65,
-      "face.chin-prominence": -0.25,
-      "face.chin-height": 0.05,
-      "face.head-fat": -0.3,
-      "face.cheek-volume": -0.1
+      "face.head-heart": 0.75,
+      "face.chin-width": -0.35,
+      "face.cheekbones": 0.25,
+      "face.forehead": 0.1,
+      "face.jaw": -0.3,
+      "face.chin-prominence": -0.12,
+      "face.head-fat": -0.2,
+      "face.cheek-volume": -0.08
      }
     },
     {
-     "id": "diamante",
-     "label": "Diamante",
+     "id": "cuadrado",
+     "label": "Cuadrado",
      "w": {
-      "face.head-oval": 0.5,
-      "face.cheekbones": 0.8,
-      "face.chin-width": -0.9,
-      "face.forehead": -0.5,
-      "face.cheek-volume": -0.35,
-      "face.chin-height": 0.1,
-      "face.head-width": -0.05,
-      "face.jaw": -0.65,
-      "face.chin-prominence": -0.2,
-      "face.head-fat": -0.4
+      "face.head-square": 0.3,
+      "face.head-round": 0.25,
+      "face.jaw": -0.12,
+      "face.chin-width": -0.12,
+      "face.chin-height": 0.0,
+      "face.cheek-volume": -0.1,
+      "face.head-fat": -0.2,
+      "face.cheekbones": 0.12,
+      "face.head-width": -0.08,
+      "face.chin-prominence": -0.1
      }
     },
     {
      "id": "alargado",
      "label": "Alargado",
      "w": {
-      "face.head-oval": 0.85,
-      "face.chin-height": 0.3,
-      "face.cheek-volume": -0.35,
-      "face.jaw": -0.65,
-      "face.head-width": -0.2,
-      "face.forehead": 0.2,
-      "face.chin-prominence": -0.25,
-      "face.chin-width": -0.75,
-      "face.head-fat": -0.4
+      "face.head-oval": 0.75,
+      "face.chin-height": 0.15,
+      "face.cheek-volume": -0.2,
+      "face.jaw": -0.35,
+      "face.head-width": -0.12,
+      "face.forehead": 0.1,
+      "face.chin-prominence": -0.12,
+      "face.chin-width": -0.35,
+      "face.head-fat": -0.25
      }
     }
    ]
@@ -296,20 +297,22 @@
    "eyeColor": "marron-oscuro",
    "sliders": {},
    "nuance": {
-    "face.eye-size": 0.12,
+    "face.eye-size": 0.18,
     "face.eye-spacing": 0.1,
     "face.eye-tilt": 0.2,
     "face.nose-width": -0.3,
     "face.nose-bridge": -0.3,
     "face.nose-tip": 0.3,
-    "face.lip-upper": 0.08,
-    "face.lip-lower": 0.1,
+    "face.lip-upper": 0.12,
+    "face.lip-lower": 0.14,
     "face.cupidsbow": 0.2,
-    "face.jaw": -0.3,
+    "face.jaw": -0.35,
     "face.chin-width": -0.1,
-    "face.chin-prominence": -0.1,
+    "face.chin-prominence": -0.15,
     "face.nose-length": 0.05,
-    "face.mouth-corners": 0.15
+    "face.mouth-corners": 0.2,
+    "face.cheekbones": 0.1,
+    "face.head-fat": -0.05
    }
   }
  ],
