@@ -387,10 +387,36 @@ html.embed[data-sup-store="1"] #pr-desc { display: none; }
 
 /* ===== B44 · embebido: las prendas inferiores son solo apoyo visual (sin color/talla/guía propios) ===== */
 html.embed #pl-body, html.embed #pl-desc { display: none; }
+
+/* ===== B47 · vista única sin scroll forzado (≥1040 px, integrado en la tienda) ===== */
+@media (min-width: 1040px) {
+  html.embed #p-avatar .phead { padding-top: 8px; gap: 4px; } html.embed #p-avatar .phead h2 { font-size: 17px; }
+  html.embed .subtabs { padding-bottom: 6px; } html.embed .subtabs button { padding: 6px 8px; min-height: 30px; }
+  html.embed #avbody { padding-top: 8px; padding-bottom: 8px; } html.embed .stackv { gap: 8px; }
+  html.embed .sec > summary { min-height: 38px; padding: 8px 12px; } html.embed .sec > .secin { padding: 0 12px 10px; gap: 8px; }
+  html.embed .sec .group { gap: 5px; } html.embed .shop .chipbtn { min-height: 30px; padding: 4px 8px; font-size: 12px; }
+  html.embed #hc-styles { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 5px; }
+  html.embed #hc-styles .card { font-size: 10px; padding: 3px 2px 4px; } html.embed #hc-styles .card .ph { aspect-ratio: 1 / 1.05; }
+  html.embed .shop .sw { width: 28px; height: 28px; } html.embed .swatches { gap: 6px; }
+  html.embed #p-avatar .pfoot { padding-top: 6px; padding-bottom: 6px; } html.embed #p-avatar .pfoot .primary { min-height: 38px; }
+  html.embed #p-prendas .phead { padding-top: 8px; gap: 4px; }
+  html.embed .catchips { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; padding-bottom: 8px; }
+  html.embed .catchips .chipbtn { min-height: 30px; padding: 4px 2px; font-size: 12px; }
+  html.embed #p-prendas .pbody { padding-top: 6px; padding-bottom: 8px; }
+  html.embed #p-prendas .cards .card { max-width: 96px; font-size: 10px; } html.embed #p-prendas .cards .card .ph { aspect-ratio: 1 / 1; }
+}
+@media (min-width: 1040px) and (max-height: 820px) {
+  html.embed .views button, html.embed .zoomctl button { min-height: 34px; }
+}
+
+/* B47: dentro de la tienda las inferiores solo se eligen en «Completa tu look» (apoyo visual); la prenda superior la elige la ficha */
+html.embed .catchips .chipbtn[data-k="inf"] { display: none; }
+html.embed[data-sup-store="1"] #pr-sup .group:has(#pr-garments), html.embed[data-sup-store="1"] #pr-sup .lbl:has(+ #pr-garments) { display: none; }
+@media (min-width: 1040px) { html.embed .catchips { grid-template-columns: repeat(4, minmax(0, 1fr)); } html.embed .catchips .chipbtn { padding: 4px 0; font-size: 11.5px; } }
 </style></head><body>
 <div class="shop" id="shop">
   <div class="topbar" role="banner">
-    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B46</span></div>
+    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B47</span></div>
     <div class="pagetitle">Probador 3D</div>
     <button class="cartbtn" id="cartbtn" aria-label="Abrir carrito (0 prendas)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="lbl2">Carrito</span><span class="n" id="cartn">0</span></button>
   </div>
@@ -405,7 +431,7 @@ html.embed #pl-body, html.embed #pl-desc { display: none; }
       <div class="pfoot"><button class="primary" id="save">Guardar mi avatar</button><p class="note" id="save-note" role="status"></p></div>
     </section>
     <section class="stage" aria-label="Avatar 3D">
-      <span class="embedtag">build B46</span>
+      <span class="embedtag">build B47</span>
       <canvas id="c" aria-label="Vista 3D del avatar: arrastre para girar, pellizque o use los botones + y − para acercar"></canvas>
       <div class="hud"><div class="badge"></div><div class="stats" id="stats"></div></div>
       <div class="zoomctl" id="zoomctl"><button id="zin" aria-label="Acercar">+</button><button id="zout" aria-label="Alejar">−</button></div>
@@ -465,6 +491,6 @@ html.embed #pl-body, html.embed #pl-desc { display: none; }
       <details class="more" id="techface"><summary>Controles técnicos del rostro (equipo)</summary><p class="note">Los 31 controles internos. Las opciones de «Rostro y piel» los combinan; moverlos aquí no cambia la elección guardada.</p></details>
     </div>
   </div>
-<script>window.MIRIZ_GLB_EXT = ".glb";   /* B46: el visor estático solo trae .glb (no hay .b64.txt) */</script>
-<script type="module" src="app.js?v=B46"></script><script type="module" src="shop.js?v=B46"></script>
+<script>window.MIRIZ_GLB_EXT = ".glb";   /* B47: el visor estático solo trae .glb (no hay .b64.txt) */</script>
+<script type="module" src="app.js?v=B47"></script><script type="module" src="shop.js?v=B47"></script>
 </body></html>
