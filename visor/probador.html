@@ -374,7 +374,7 @@ html.embed[data-sup-store="1"] #pr-desc { display: none; }
 /* ===== B43 · embebido ≥1040 px: 3 columnas. Izq: avatar · Centro: visor · Der: prendas (arriba) + hueco para la ficha de la tienda (abajo) ===== */
 .storeslot { display: none; }
 @media (min-width: 1040px) {
-  html.embed .layout { grid-template-columns: minmax(250px, 25%) minmax(0, 1fr) minmax(340px, 33%); grid-template-rows: minmax(0, 1fr) minmax(0, 1.05fr); grid-template-areas: "left stage right" "left stage slot"; }
+  html.embed .layout { grid-template-columns: minmax(250px, 25%) minmax(0, 1fr) minmax(340px, 33%); grid-template-rows: minmax(0, 0.82fr) minmax(0, 1.3fr); grid-template-areas: "left stage right" "left stage slot"; }
   html.embed #p-avatar { grid-area: left; border: 0; border-right: 1px solid var(--line); }
   html.embed #p-prendas { grid-area: right; border: 0; border-left: 1px solid var(--line); }
   html.embed .layout[data-sec] #p-avatar, html.embed .layout[data-sec] #p-prendas { display: flex; }
@@ -424,7 +424,7 @@ html.embed .suggest .sgdemo { margin: 0; font-size: 11px; line-height: 1.3; }
 </style></head><body>
 <div class="shop" id="shop">
   <div class="topbar" role="banner">
-    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B49</span></div>
+    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B50</span></div>
     <div class="pagetitle">Probador 3D</div>
     <button class="cartbtn" id="cartbtn" aria-label="Abrir carrito (0 prendas)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="lbl2">Carrito</span><span class="n" id="cartn">0</span></button>
   </div>
@@ -439,7 +439,7 @@ html.embed .suggest .sgdemo { margin: 0; font-size: 11px; line-height: 1.3; }
       <div class="pfoot"><button class="primary" id="save">Guardar mi avatar</button><p class="note" id="save-note" role="status"></p></div>
     </section>
     <section class="stage" aria-label="Avatar 3D">
-      <span class="embedtag">build B49</span>
+      <span class="embedtag">build B50</span>
       <canvas id="c" aria-label="Vista 3D del avatar: arrastre para girar, pellizque o use los botones + y − para acercar"></canvas>
       <div class="hud"><div class="badge"></div><div class="stats" id="stats"></div></div>
       <div class="zoomctl" id="zoomctl"><button id="zin" aria-label="Acercar">+</button><button id="zout" aria-label="Alejar">−</button></div>
@@ -499,13 +499,13 @@ html.embed .suggest .sgdemo { margin: 0; font-size: 11px; line-height: 1.3; }
       <details class="more" id="techface"><summary>Controles técnicos del rostro (equipo)</summary><p class="note">Los 31 controles internos. Las opciones de «Rostro y piel» los combinan; moverlos aquí no cambia la elección guardada.</p></details>
     </div>
   </div>
-<script>window.MIRIZ_BUILD="B49";window.MIRIZ_SHOP=true;
-/* B49: precarga en paralelo (desde el primer instante) de todo lo que necesita la entrada: antes se pedía uno tras otro */
+<script>window.MIRIZ_BUILD="B50";window.MIRIZ_SHOP=true;
+/* B50: precarga en paralelo (desde el primer instante) de todo lo que necesita la entrada: antes se pedía uno tras otro */
 (function(){var V=window.MIRIZ_BUILD,w=function(u){return u+'?v='+V};
 ['calibracion.json','testcases.json','faceRecipes.json','skinTones.json'].forEach(function(u){fetch(w(u)).then(function(r){return r.arrayBuffer()}).catch(function(){})});
 ['avatar2_base.glb','underwear.glb','underwear_bind.json','hairCatalog.json','hair_g3-medio-ondulado.glb','hair_g3-medio-ondulado_bind.json','hair_g1-pestanas03.glb','hair_g1-pestanas03_bind.json','garmentCatalog.json','garment_polo-basico_M.glb','garment_polo-basico_M_bind.json'].forEach(function(u){fetch(w(u)).then(function(r){return r.arrayBuffer()}).catch(function(){})});
 ['skin_detail.jpg','face_masks.png','skin_micro.png','lip_line.png','brows_recta.png','brows_arco-suave.png','brows_arco-marcado.png','eye_marron-oscuro.png','eye_marron-claro.png','eye_avellana.png','eye_azul.png','eye_verde.png','scalp_mask.png','hair_atlas.png','hair_atlas_curly.png','hair_afro.png'].forEach(function(u){new Image().src=w(u)});
 ['g2_fib_ondulado.webp','mh_eyelashes03.webp'].forEach(function(u){new Image().src=u});})();</script>
-<script>window.MIRIZ_GLB_EXT = ".glb";   /* B49: el visor estático solo trae .glb (no hay .b64.txt) */</script>
-<script type="module" src="app.js?v=B49"></script><script type="module" src="shop.js?v=B49"></script>
+<script>window.MIRIZ_GLB_EXT = ".glb";   /* B50: el visor estático solo trae .glb (no hay .b64.txt) */</script>
+<script type="module" src="app.js?v=B50"></script><script type="module" src="shop.js?v=B50"></script>
 </body></html>

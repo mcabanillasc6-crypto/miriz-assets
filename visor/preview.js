@@ -49471,9 +49471,14 @@ var AvatarEngine = class {
 #endif
 #include <opaque_fragment>`).replace("#include <map_fragment>", `#include <map_fragment>
 { float ndv = abs(dot(normalize(vNormal), normalize(vViewPosition))); float ed = 1.0 - smoothstep(0.12, 0.72, ndv);   // B33: el globo se oscurece y se ti\xF1e de rosa hacia los bordes (sin halo gris a los lados del ojo)
-  diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(0.80, 0.60, 0.55), ed * 0.95); } `);
+  diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(0.80, 0.60, 0.55), ed * 0.78);
+  vec3 upV = normalize((viewMatrix * vec4(0.0, 1.0, 0.0, 0.0)).xyz); float lidU = smoothstep(-0.08, 0.34, dot(normalize(vNormal), upV)); float lidD = smoothstep(0.35, 0.8, -dot(normalize(vNormal), upV));
+  gWarm = max(smoothstep(0.22, 0.72, 1.0 - ndv), lidD * 0.9); diffuseColor.rgb = mix(diffuseColor.rgb, diffuseColor.rgb * vec3(1.14, 0.84, 0.72), gWarm * 0.85);
+  gLid = 1.0 - 0.5 * lidU - 0.06 * lidD; diffuseColor.rgb *= gLid; } `).replace("#include <emissivemap_fragment>", `#include <emissivemap_fragment>
+totalEmissiveRadiance *= gLid * mix(vec3(1.0), vec3(0.82, 0.60, 0.50), gWarm * 0.9);`).replace("#include <common>", `#include <common>
+float gLid = 1.0; float gWarm = 0.0;`);
     };
-    em.customProgramCacheKey = () => "eye-b33";
+    em.customProgramCacheKey = () => "eye-b50";
     em.emissive.set("#fff1e6");
     em.emissiveMap = em.map;
     em.emissiveIntensity = 0.45;
