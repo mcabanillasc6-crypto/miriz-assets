@@ -1,0 +1,317 @@
+{
+ "schema": "miriz.avatar2.faceRecipes/1",
+ "version": "6.0.0",
+ "rule": "peso final = recorte_a_rango_seguro( valores de la opción elegida en cada grupo + deslizador × su receta + matiz del rostro de partida )",
+ "groups": [
+  {
+   "id": "forma",
+   "label": "Forma del rostro",
+   "keys": [
+    "face.head-oval",
+    "face.head-round",
+    "face.head-square",
+    "face.head-heart",
+    "face.head-fat",
+    "face.cheek-volume",
+    "face.jaw",
+    "face.chin-width",
+    "face.chin-height",
+    "face.chin-prominence",
+    "face.cheekbones",
+    "face.head-width",
+    "face.forehead"
+   ],
+   "options": [
+    {
+     "id": "ovalado",
+     "label": "Ovalado",
+     "w": {
+      "face.head-oval": 0.95,
+      "face.chin-width": -0.15,
+      "face.cheek-volume": -0.05
+     }
+    },
+    {
+     "id": "redondo",
+     "label": "Redondo",
+     "w": {
+      "face.head-round": 0.75,
+      "face.cheek-volume": 0.22,
+      "face.chin-height": -0.3,
+      "face.jaw": -0.1,
+      "face.head-width": 0.1
+     }
+    },
+    {
+     "id": "corazon",
+     "label": "Corazón",
+     "w": {
+      "face.head-heart": 0.95,
+      "face.chin-width": -0.8,
+      "face.cheekbones": 0.5,
+      "face.forehead": 0.3,
+      "face.jaw": -0.65,
+      "face.chin-prominence": -0.25,
+      "face.chin-height": 0.05,
+      "face.head-fat": -0.3,
+      "face.cheek-volume": -0.1
+     }
+    },
+    {
+     "id": "diamante",
+     "label": "Diamante",
+     "w": {
+      "face.head-oval": 0.5,
+      "face.cheekbones": 0.8,
+      "face.chin-width": -0.9,
+      "face.forehead": -0.5,
+      "face.cheek-volume": -0.35,
+      "face.chin-height": 0.1,
+      "face.head-width": -0.05,
+      "face.jaw": -0.65,
+      "face.chin-prominence": -0.2,
+      "face.head-fat": -0.4
+     }
+    },
+    {
+     "id": "alargado",
+     "label": "Alargado",
+     "w": {
+      "face.head-oval": 0.85,
+      "face.chin-height": 0.3,
+      "face.cheek-volume": -0.35,
+      "face.jaw": -0.65,
+      "face.head-width": -0.2,
+      "face.forehead": 0.2,
+      "face.chin-prominence": -0.25,
+      "face.chin-width": -0.75,
+      "face.head-fat": -0.4
+     }
+    }
+   ]
+  },
+  {
+   "id": "ojos",
+   "label": "Ojos",
+   "keys": [
+    "face.eye-size",
+    "face.eye-open",
+    "face.eye-spacing",
+    "face.eye-tilt",
+    "face.eye-height"
+   ],
+   "options": [
+    {
+     "id": "almendrados",
+     "label": "Almendrados",
+     "w": {}
+    },
+    {
+     "id": "rasgados",
+     "label": "Rasgados suaves",
+     "w": {
+      "face.eye-tilt": 0.7,
+      "face.eye-open": -0.2,
+      "face.eye-spacing": 0.03
+     }
+    },
+    {
+     "id": "redondos",
+     "label": "Grandes y redondos",
+     "w": {
+      "face.eye-size": 0.32,
+      "face.eye-open": 0.45,
+      "face.eye-tilt": -0.3,
+      "face.eye-spacing": -0.05
+     }
+    },
+    {
+     "id": "caidos",
+     "label": "Caídos naturales",
+     "w": {
+      "face.eye-tilt": -1.0,
+      "face.eye-open": -0.05,
+      "face.eye-size": 0.04
+     }
+    }
+   ],
+   "sliders": []
+  },
+  {
+   "id": "cejas",
+   "label": "Cejas",
+   "keys": [
+    "face.brow-angle",
+    "face.brow-height"
+   ],
+   "options": [
+    {
+     "id": "arco-suave",
+     "label": "Arco suave",
+     "w": {},
+     "texture": "arco-suave"
+    },
+    {
+     "id": "arco-marcado",
+     "label": "Arco marcado",
+     "w": {
+      "face.brow-angle": 0.45
+     },
+     "texture": "arco-marcado"
+    },
+    {
+     "id": "rectas",
+     "label": "Rectas",
+     "w": {
+      "face.brow-angle": -0.4
+     },
+     "texture": "recta"
+    }
+   ],
+   "thickness": [
+    {
+     "id": "fino",
+     "label": "Fino",
+     "channel": 0
+    },
+    {
+     "id": "natural",
+     "label": "Natural",
+     "channel": 1
+    },
+    {
+     "id": "poblado",
+     "label": "Poblado",
+     "channel": 2
+    }
+   ],
+   "sliders": []
+  },
+  {
+   "id": "nariz",
+   "label": "Nariz",
+   "keys": [
+    "face.nose-width",
+    "face.nose-tip",
+    "face.nose-bridge"
+   ],
+   "options": [
+    {
+     "id": "fina",
+     "label": "Fina",
+     "w": {
+      "face.nose-width": -0.25,
+      "face.nose-bridge": -0.1
+     }
+    },
+    {
+     "id": "natural",
+     "label": "Natural",
+     "w": {}
+    },
+    {
+     "id": "suave",
+     "label": "Ancha y suave",
+     "w": {
+      "face.nose-width": 0.3,
+      "face.nose-tip": -0.15
+     }
+    }
+   ],
+   "sliders": []
+  },
+  {
+   "id": "labios",
+   "label": "Labios",
+   "keys": [
+    "face.lip-upper",
+    "face.lip-lower",
+    "face.mouth-width"
+   ],
+   "options": [
+    {
+     "id": "finos",
+     "label": "Finos",
+     "w": {
+      "face.lip-upper": -0.25,
+      "face.lip-lower": -0.25
+     }
+    },
+    {
+     "id": "naturales",
+     "label": "Naturales",
+     "w": {}
+    },
+    {
+     "id": "carnosos",
+     "label": "Carnosos",
+     "w": {
+      "face.lip-upper": 0.25,
+      "face.lip-lower": 0.25
+     }
+    }
+   ],
+   "sliders": []
+  }
+ ],
+ "eyeColors": [
+  {
+   "id": "marron-oscuro",
+   "label": "Marrón oscuro",
+   "hex": "#3d2416"
+  },
+  {
+   "id": "marron-claro",
+   "label": "Marrón claro",
+   "hex": "#8a5a33"
+  },
+  {
+   "id": "avellana",
+   "label": "Avellana",
+   "hex": "#8f7a3a"
+  },
+  {
+   "id": "azul",
+   "label": "Azul / celeste",
+   "hex": "#5b7690"
+  },
+  {
+   "id": "verde",
+   "label": "Verde",
+   "hex": "#6a6c3c"
+  }
+ ],
+ "starts": [
+  {
+   "id": "base",
+   "label": "Rostro base",
+   "choice": {
+    "forma": "ovalado",
+    "cejas": "arco-suave",
+    "ojos": "almendrados",
+    "nariz": "natural",
+    "labios": "naturales"
+   },
+   "browThickness": "natural",
+   "eyeColor": "marron-oscuro",
+   "sliders": {},
+   "nuance": {
+    "face.eye-size": 0.12,
+    "face.eye-spacing": 0.1,
+    "face.eye-tilt": 0.2,
+    "face.nose-width": -0.3,
+    "face.nose-bridge": -0.3,
+    "face.nose-tip": 0.3,
+    "face.lip-upper": 0.08,
+    "face.lip-lower": 0.1,
+    "face.cupidsbow": 0.2,
+    "face.jaw": -0.3,
+    "face.chin-width": -0.1,
+    "face.chin-prominence": -0.1,
+    "face.nose-length": 0.05,
+    "face.mouth-corners": 0.15
+   }
+  }
+ ],
+ "note": "Bloque C (F1.2-exp): 5 rostros con siluetas más distintas; rostro base con ojos almendrados más expresivos, nariz estilizada y comisuras suaves; iris en 5 colores. Peso final = recorte_a_rango_seguro(opción + control·receta + matiz base)."
+}

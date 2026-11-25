@@ -1,0 +1,1151 @@
+{
+ "version": "F4-6 (Fase 4 · Bloque 1 · B30)",
+ "note": "F4 · prendas digitales de demostración diseñadas para MIRIZ. Medidas y holguras técnicas ESTIMADAS (no medidas en prendas físicas). Contornos completos en cm.",
+ "fidelity": "Representación aproximada · prenda digital con medidas técnicas estimadas",
+ "stretchCm": {
+  "ninguna": 0,
+  "baja": 2,
+  "media": 4,
+  "alta": 6
+ },
+ "fitRanges": {
+  "_fuente": "Mismos rangos orientativos que la propuesta M1.2 (copiados como constantes; M1.1 y M1.2 no se modifican)",
+  "ceñido": {
+   "busto": [
+    -2,
+    4,
+    1
+   ],
+   "cintura": [
+    -2,
+    12
+   ],
+   "cadera": [
+    -2,
+    12
+   ]
+  },
+  "regular": {
+   "busto": [
+    3,
+    10,
+    6
+   ],
+   "cintura": [
+    0,
+    99
+   ],
+   "cadera": [
+    0,
+    99
+   ]
+  },
+  "holgado": {
+   "busto": [
+    8,
+    20,
+    12
+   ],
+   "cintura": [
+    4,
+    99
+   ],
+   "cadera": [
+    4,
+    99
+   ]
+  }
+ },
+ "garments": [
+  {
+   "id": "top-asimetrico",
+   "label": "Top asimétrico drapeado",
+   "tag": "Tendencia",
+   "category": "Tops",
+   "fitLabel": "Ceñido / Elástico",
+   "description": "Escote diagonal de un solo hombro: un hombro cubierto hasta el cuello con manga corta ajustada y el otro descubierto. Drapeado suave en el pecho y fruncido horizontal en los costados hasta la cadera alta.",
+   "fit": "ceñido",
+   "stretch": "alta",
+   "fabric": "Punto elástico liso mate (estimado)",
+   "fabricKind": "knit",
+   "design": "asim",
+   "sleeve": "short",
+   "clearance": 0.0025,
+   "drape": 0,
+   "bustDrape": 0.5,
+   "bustDropRun": 0.05,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     78,
+     82,
+     88,
+     94,
+     100
+    ],
+    "cintura": [
+     64,
+     68,
+     74,
+     80,
+     86
+    ],
+    "borde": [
+     78,
+     82,
+     88,
+     94,
+     100
+    ],
+    "cadera": [
+     80,
+     84,
+     90,
+     96,
+     102
+    ],
+    "largo": [
+     43,
+     45,
+     47,
+     49,
+     51
+    ],
+    "hombro": [
+     33,
+     34,
+     35.5,
+     37,
+     38.5
+    ],
+    "manga": [
+     8,
+     8.5,
+     9,
+     9.5,
+     10
+    ],
+    "contornoManga": [
+     24,
+     25.5,
+     27,
+     28.5,
+     30
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     19,
+     19.5,
+     20,
+     20.5,
+     21
+    ],
+    "waistDepth": [
+     34,
+     35,
+     36,
+     37,
+     38
+    ]
+   },
+   "colors": [
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#161616"
+    },
+    {
+     "id": "chocolate",
+     "label": "Marrón chocolate",
+     "hex": "#3b241c"
+    },
+    {
+     "id": "marfil",
+     "label": "Marfil",
+     "hex": "#ebe5dd"
+    }
+   ]
+  },
+  {
+   "id": "polo-basico",
+   "label": "Polo básico",
+   "tag": "Básico",
+   "category": "Polos",
+   "fitLabel": "Entallado / Elástico",
+   "description": "Polo corto entallado de manga corta y cuello redondo limpio. Se adapta al busto y al torso y termina a la altura de la cintura, dejando ver una franja de abdomen.",
+   "fit": "ceñido",
+   "stretch": "media",
+   "fabric": "Jersey de punto liso (estimado)",
+   "fabricKind": "jersey",
+   "design": "polo",
+   "sleeve": "short",
+   "clearance": 0.003,
+   "drape": 0.0,
+   "bustDrape": 0.3,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     82,
+     86,
+     92,
+     98,
+     104
+    ],
+    "cintura": [
+     66,
+     70,
+     76,
+     82,
+     88
+    ],
+    "borde": [
+     72,
+     76,
+     82,
+     88,
+     94
+    ],
+    "cadera": [
+     80,
+     84,
+     90,
+     96,
+     102
+    ],
+    "largo": [
+     36,
+     37,
+     38,
+     39,
+     40
+    ],
+    "hombro": [
+     36,
+     37,
+     38.5,
+     40,
+     41.5
+    ],
+    "manga": [
+     13,
+     13.5,
+     14,
+     14.5,
+     15
+    ],
+    "contornoManga": [
+     28,
+     29.5,
+     31,
+     32.5,
+     34
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     20,
+     20.5,
+     21,
+     21.5,
+     22
+    ],
+    "waistDepth": [
+     37,
+     38,
+     39,
+     40,
+     41
+    ]
+   },
+   "colors": [
+    {
+     "id": "blanco",
+     "label": "Blanco",
+     "hex": "#FAF8F5"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#1C1B1F"
+    },
+    {
+     "id": "gris",
+     "label": "Gris",
+     "hex": "#A7A9AC"
+    },
+    {
+     "id": "azul-marino",
+     "label": "Azul Marino",
+     "hex": "#102B50"
+    },
+    {
+     "id": "rosa-pastel",
+     "label": "Rosa Pastel",
+     "hex": "#F5DCE5"
+    }
+   ]
+  },
+  {
+   "id": "body-escote-cuadrado",
+   "label": "Body de manga larga y escote cuadrado",
+   "tag": "Básico",
+   "category": "Bodies",
+   "fitLabel": "Ceñido / Elástico",
+   "description": "Segunda piel de manga larga ajustada, con escote cuadrado ancho y profundo y hombros cubiertos. Las mangas rozan la muñeca y el largo llega a la cadera alta.",
+   "fit": "ceñido",
+   "stretch": "alta",
+   "fabric": "Punto elástico liso mate (estimado)",
+   "fabricKind": "knit",
+   "design": "body",
+   "sleeve": "long",
+   "clearance": 0.0025,
+   "drape": 0,
+   "bustDrape": 0.5,
+   "bustDropRun": 0.05,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     78,
+     82,
+     88,
+     94,
+     100
+    ],
+    "cintura": [
+     62,
+     66,
+     72,
+     78,
+     84
+    ],
+    "borde": [
+     80,
+     84,
+     90,
+     96,
+     102
+    ],
+    "cadera": [
+     82,
+     86,
+     92,
+     98,
+     104
+    ],
+    "largo": [
+     44,
+     46,
+     48,
+     50,
+     52
+    ],
+    "hombro": [
+     34,
+     35,
+     36.5,
+     38,
+     39.5
+    ],
+    "manga": [
+     45.5,
+     46.3,
+     47,
+     48,
+     49
+    ],
+    "contornoManga": [
+     24,
+     25.5,
+     27,
+     28.5,
+     30
+    ],
+    "puño": [
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     19,
+     19.5,
+     20,
+     20.5,
+     21
+    ],
+    "waistDepth": [
+     34,
+     35,
+     36,
+     37,
+     38
+    ]
+   },
+   "colors": [
+    {
+     "id": "borgona",
+     "label": "Borgoña",
+     "hex": "#4a1c24"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#161616"
+    },
+    {
+     "id": "crema",
+     "label": "Crema",
+     "hex": "#e6ddd2"
+    }
+   ]
+  },
+  {
+   "id": "camisa-rayas",
+   "label": "Camisa amplia de rayas",
+   "tag": "Oversize",
+   "category": "Camisas",
+   "fitLabel": "Holgado / Oversize",
+   "description": "Camisa oversize de hombro caído, cuello camp abierto en V, botones blancos al frente, bolsillo de parche en el pecho izquierdo y mangas largas holgadas con puño. Bajo redondeado más largo atrás.",
+   "fit": "holgado",
+   "stretch": "ninguna",
+   "fabric": "Algodón/lino ligero con rayas finas (estimado)",
+   "fabricKind": "stripe",
+   "design": "camisa",
+   "sleeve": "long",
+   "clearance": 0.003,
+   "drape": 0.3,
+   "bustDrape": 0.1,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     100,
+     104,
+     108,
+     114,
+     120
+    ],
+    "cintura": [
+     98,
+     102,
+     106,
+     112,
+     118
+    ],
+    "borde": [
+     102,
+     106,
+     110,
+     116,
+     122
+    ],
+    "cadera": [
+     102,
+     106,
+     110,
+     116,
+     122
+    ],
+    "largo": [
+     46,
+     47.5,
+     49,
+     50.5,
+     52
+    ],
+    "hombro": [
+     44,
+     46,
+     48,
+     50,
+     52
+    ],
+    "manga": [
+     51,
+     52,
+     53,
+     54,
+     55
+    ],
+    "contornoManga": [
+     34,
+     35.5,
+     37,
+     38.5,
+     40
+    ],
+    "puño": [
+     23,
+     24,
+     25,
+     26,
+     27
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     21,
+     21.5,
+     22,
+     22.5,
+     23
+    ],
+    "waistDepth": [
+     38,
+     39,
+     40,
+     41,
+     42
+    ]
+   },
+   "colors": [
+    {
+     "id": "rosa-pastel",
+     "label": "Rosa pastel",
+     "hex": "#e8a8b8"
+    },
+    {
+     "id": "beige-arena",
+     "label": "Beige arena",
+     "hex": "#d8cbb8"
+    },
+    {
+     "id": "celeste",
+     "label": "Celeste",
+     "hex": "#9ebcd4"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#222222"
+    },
+    {
+     "id": "gris-topo",
+     "label": "Gris topo",
+     "hex": "#8c8984"
+    }
+   ]
+  },
+  {
+   "id": "blusa-halter",
+   "label": "Blusa halter satinada con escote drapeado",
+   "tag": "Fiesta",
+   "category": "Blusas",
+   "fitLabel": "Recto / Fluido",
+   "description": "Blusa sin mangas de satén fluido con escote cowl en cascada y fino tirante al cuello. Hombros y espalda alta descubiertos; cae recta y suelta hasta la cadera alta.",
+   "fit": "regular",
+   "stretch": "baja",
+   "fabric": "Satén fluido con brillo suave (estimado)",
+   "fabricKind": "satin",
+   "design": "halter",
+   "sleeve": "none",
+   "clearance": 0.003,
+   "drape": 0.2,
+   "bustDrape": 0.12,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     88,
+     92,
+     98,
+     104,
+     110
+    ],
+    "cintura": [
+     86,
+     90,
+     96,
+     102,
+     108
+    ],
+    "borde": [
+     90,
+     94,
+     100,
+     106,
+     112
+    ],
+    "cadera": [
+     90,
+     94,
+     100,
+     106,
+     112
+    ],
+    "largo": [
+     46,
+     48,
+     50,
+     52,
+     54
+    ],
+    "hombro": [
+     30,
+     31,
+     32,
+     33,
+     34
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     20,
+     20.5,
+     21,
+     21.5,
+     22
+    ],
+    "waistDepth": [
+     36,
+     37,
+     38,
+     39,
+     40
+    ]
+   },
+   "colors": [
+    {
+     "id": "marfil",
+     "label": "Blanco marfil",
+     "hex": "#f4f1ea"
+    },
+    {
+     "id": "champan",
+     "label": "Champán perlado",
+     "hex": "#dfd0c0"
+    },
+    {
+     "id": "rosa-empolvado",
+     "label": "Rosa empolvado",
+     "hex": "#c89aa6"
+    },
+    {
+     "id": "vino",
+     "label": "Vino satinado",
+     "hex": "#7a1822"
+    }
+   ]
+  },
+  {
+   "id": "cardigan-corto",
+   "label": "Cárdigan corto de punto fino",
+   "tag": "Básico",
+   "category": "Cárdigans",
+   "fitLabel": "Recto / Semi-entallado",
+   "description": "Cárdigan corto de punto fino con cuello redondo acanalado, abertura delantera cerrada con botones del mismo tono, mangas largas con puño acanalado y bajo acanalado a la cadera alta.",
+   "fit": "regular",
+   "stretch": "media",
+   "fabric": "Punto fino mate (estimado)",
+   "fabricKind": "cardigan",
+   "design": "cardigan",
+   "sleeve": "long",
+   "clearance": 0.003,
+   "drape": 0.1,
+   "bustDrape": 0.12,
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "table": {
+    "busto": [
+     90,
+     94,
+     100,
+     106,
+     112
+    ],
+    "cintura": [
+     82,
+     86,
+     92,
+     98,
+     104
+    ],
+    "borde": [
+     84,
+     88,
+     94,
+     100,
+     106
+    ],
+    "cadera": [
+     88,
+     92,
+     98,
+     104,
+     110
+    ],
+    "largo": [
+     44,
+     46,
+     48,
+     50,
+     52
+    ],
+    "hombro": [
+     35,
+     36,
+     37.5,
+     39,
+     40.5
+    ],
+    "manga": [
+     45.5,
+     46.3,
+     47,
+     48,
+     49
+    ],
+    "contornoManga": [
+     28,
+     29.5,
+     31,
+     32.5,
+     34
+    ],
+    "puño": [
+     14,
+     15,
+     16,
+     17,
+     18
+    ]
+   },
+   "pattern": {
+    "bustDepth": [
+     20,
+     20.5,
+     21,
+     21.5,
+     22
+    ],
+    "waistDepth": [
+     36,
+     37,
+     38,
+     39,
+     40
+    ]
+   },
+   "colors": [
+    {
+     "id": "cafe",
+     "label": "Marrón café oscuro",
+     "hex": "#3c2c28"
+    },
+    {
+     "id": "topo",
+     "label": "Topo / beige cálido",
+     "hex": "#a8988a"
+    },
+    {
+     "id": "mantequilla",
+     "label": "Amarillo mantequilla",
+     "hex": "#f2e2a6"
+    }
+   ]
+  }
+ ],
+ "limitations": [
+  "Prendas digitales de demostración: medidas y holguras técnicas ESTIMADAS, no medidas en prendas físicas.",
+  "Prendas inferiores (B21): se construyen sobre el contorno resuelto del avatar (cintura, cadera, muslos, rodilla y largo de pierna según la estatura); la tela no se simula: bolsillos, pespuntes, trabillas, pinzas y raya se dibujan sobre la malla.",
+  "Prendas inferiores (B22): tiro medio (pretina a la altura del ombligo); el tiro se cierra con una entrepierna continua que baja bajo la piel; en la ingle y el surco entre glúteos la tela se separa unos milímetros de la piel; la Minifalda es entallada, de tiro bajo (pretina en la cadera) y llega al muslo superior. La tela no se simula: el pliegue del tiro es fijo.",
+  "El contorno de la prenda por talla se respeta en cada altura del tronco y de las mangas (brazo y antebrazo); el largo se gradúa por talla (corte del patrón), pero la tela no se simula: los pliegues y la caída son fijos y siguen al cuerpo.",
+  "Si el cuerpo es mayor que la prenda, se muestra pegada y se informa cuánto tendría que estirarse; no se simulan arrugas de tensión.",
+  "La holgura extra (oversize) se ve como volumen fijo; en cuerpos muy delgados con tallas grandes puede verse algo rígida.",
+  "Cuello camp, bolsillo, botones, rayas, fruncido y cascada del escote cowl se dibujan sobre la malla (relieve y color); no son piezas de tela separadas.",
+  "El nudo de la blusa halter no se modela: el tirante fino sube por los lados del cuello.",
+  "El color se muestra sobre una iluminación de estudio; no está calibrado contra una foto."
+ ],
+ "bodySizes": {
+  "_fuente": "Rangos de cuerpo estándar (B19): promedios XS 80/61/87, S 86/66/92, M 92/72/98, L 98/79/104; S hasta busto 88 y cintura 69; orientativos.",
+  "XS": {
+   "busto": [
+    78,
+    84
+   ],
+   "cintura": [
+    58,
+    64
+   ],
+   "cadera": [
+    84,
+    90
+   ]
+  },
+  "S": {
+   "busto": [
+    84,
+    88.5
+   ],
+   "cintura": [
+    64,
+    69
+   ],
+   "cadera": [
+    90,
+    95
+   ]
+  },
+  "M": {
+   "busto": [
+    88.5,
+    95
+   ],
+   "cintura": [
+    69,
+    76
+   ],
+   "cadera": [
+    95,
+    101
+   ]
+  },
+  "L": {
+   "busto": [
+    95,
+    101
+   ],
+   "cintura": [
+    76,
+    83
+   ],
+   "cadera": [
+    101,
+    107
+   ]
+  },
+  "XL": {
+   "busto": [
+    101,
+    108
+   ],
+   "cintura": [
+    83,
+    90
+   ],
+   "cadera": [
+    107,
+    114
+   ]
+  }
+ },
+ "lower": [
+  {
+   "id": "jean-tiro-medio-recto",
+   "label": "Jean tiro medio recto",
+   "tag": "Básico",
+   "category": "Jeans",
+   "fitLabel": "Tiro medio / Recto",
+   "description": "Jean de tiro medio y pierna recta: la pretina con trabillas queda a la altura del ombligo; bragueta y bolsillos delanteros y traseros con pespuntes. El bajo llega al tobillo.",
+   "fit": "regular",
+   "stretch": "baja",
+   "fabric": "Denim de algodón con algo de elastano (estimado)",
+   "fabricKind": "denim",
+   "design": "jean",
+   "kind": "pants",
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "geom": {
+    "hemFrac": 0.066,
+    "riseOff": -0.03,
+    "minM": 0.0035,
+    "maxM": 0.05,
+    "kappa": 0.7,
+    "band": 0.04,
+    "stretchTol": 0.03
+   },
+   "table": {
+    "cintura": [
+     66,
+     71,
+     77,
+     84,
+     91
+    ],
+    "cadera": [
+     91,
+     96.5,
+     102,
+     108,
+     114.5
+    ],
+    "muslo": [
+     54,
+     57,
+     60,
+     63.5,
+     67
+    ],
+    "rodilla": [
+     42,
+     44,
+     46,
+     48,
+     50
+    ],
+    "bajo": [
+     41,
+     43,
+     45,
+     47,
+     49
+    ],
+    "tiro": [
+     27,
+     27.5,
+     28,
+     28.5,
+     29
+    ],
+    "entrepierna": [
+     76,
+     77,
+     78,
+     79,
+     80
+    ]
+   },
+   "colors": [
+    {
+     "id": "denim-medio",
+     "label": "Denim azul medio",
+     "hex": "#41608a"
+    },
+    {
+     "id": "denim-claro",
+     "label": "Denim claro",
+     "hex": "#8aa7c8"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#1a1a1c"
+    }
+   ]
+  },
+  {
+   "id": "minifalda",
+   "label": "Minifalda",
+   "tag": "Tendencia",
+   "category": "Faldas",
+   "fitLabel": "Tiro bajo / Mini",
+   "description": "Minifalda entallada de tiro bajo: pretina en la cadera con botón frontal, bragueta y bolsillos delanteros sutiles; deja ver una franja de abdomen y llega al muslo superior.",
+   "fit": "regular",
+   "stretch": "baja",
+   "fabric": "Satén mate fluido (estimado)",
+   "fabricKind": "satin",
+   "design": "falda",
+   "kind": "skirt",
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "geom": {
+    "hemFrac": 0.4,
+    "riseOff": -0.075,
+    "minM": 0.0055,
+    "maxM": 0.05,
+    "kappa": 0.0,
+    "band": 0.032,
+    "flare": 1.0,
+    "stretchTol": 0.02
+   },
+   "table": {
+    "cintura": [
+     72,
+     77,
+     83,
+     90,
+     97
+    ],
+    "cadera": [
+     92,
+     97.5,
+     103,
+     109,
+     115.5
+    ],
+    "bajo": [
+     90,
+     95.5,
+     101,
+     107,
+     113.5
+    ],
+    "largo": [
+     32,
+     33,
+     34,
+     35,
+     36
+    ]
+   },
+   "colors": [
+    {
+     "id": "champan",
+     "label": "Champán",
+     "hex": "#d9c3a1"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#1a1a1c"
+    },
+    {
+     "id": "rosa-empolvado",
+     "label": "Rosa empolvado",
+     "hex": "#cf9fa8"
+    }
+   ]
+  },
+  {
+   "id": "short-sastre-tiro-medio",
+   "label": "Short sastre tiro medio",
+   "tag": "Verano",
+   "category": "Shorts",
+   "fitLabel": "Tiro medio / Recto",
+   "description": "Short de sastre de tiro medio con pinzas, trabillas y botón en la pretina, a la altura del ombligo. Largo a mitad del muslo y pierna recta.",
+   "fit": "regular",
+   "stretch": "ninguna",
+   "fabric": "Sarga de sastre ligera (estimado)",
+   "fabricKind": "suiting",
+   "design": "short",
+   "kind": "pants",
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL"
+   ],
+   "geom": {
+    "hemDropFromCrotch": 0.075,
+    "riseOff": -0.025,
+    "minM": 0.0055,
+    "maxM": 0.05,
+    "kappa": 0.05,
+    "band": 0.034,
+    "stretchTol": 0.0
+   },
+   "table": {
+    "cintura": [
+     67,
+     72,
+     78,
+     85,
+     92
+    ],
+    "cadera": [
+     94,
+     99.5,
+     105,
+     111,
+     117.5
+    ],
+    "muslo": [
+     60,
+     63,
+     66,
+     69.5,
+     73
+    ],
+    "rodilla": [
+     57.5,
+     60,
+     62.5,
+     65.5,
+     68.5
+    ],
+    "bajo": [
+     56,
+     58.5,
+     61,
+     64,
+     67
+    ],
+    "tiro": [
+     29,
+     29.5,
+     30,
+     30.5,
+     31
+    ],
+    "entrepierna": [
+     10,
+     10.5,
+     11,
+     11.5,
+     12
+    ]
+   },
+   "colors": [
+    {
+     "id": "marfil",
+     "label": "Blanco marfil",
+     "hex": "#efe9dc"
+    },
+    {
+     "id": "beige",
+     "label": "Beige",
+     "hex": "#d3c1a2"
+    },
+    {
+     "id": "negro",
+     "label": "Negro",
+     "hex": "#1c1c1e"
+    }
+   ]
+  }
+ ],
+ "lowerStretchCm": {
+  "ninguna": 0,
+  "baja": 2,
+  "media": 4,
+  "alta": 6
+ }
+}

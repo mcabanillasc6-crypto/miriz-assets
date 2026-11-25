@@ -1,0 +1,191 @@
+{
+ "version": "2.0.0",
+ "lengths": {
+  "corto": "Corto",
+  "medio": "Medio",
+  "largo": "Largo",
+  "muy-largo": "Muy largo"
+ },
+ "textures": {
+  "lacio": "Lacio",
+  "ondulado": "Ondulado",
+  "rizado": "Rizado",
+  "muy-rizado": "Muy rizado"
+ },
+ "styles": [
+  {
+   "id": "pixie",
+   "hidden": true,
+   "label": "Pixie",
+   "length": "corto",
+   "texture": "lacio",
+   "kind": "loose"
+  },
+  {
+   "id": "corto-rizado",
+   "hidden": true,
+   "label": "Corto rizado",
+   "length": "corto",
+   "texture": "rizado",
+   "kind": "loose"
+  },
+  {
+   "id": "afro-corto",
+   "hidden": true,
+   "label": "Afro corto",
+   "length": "corto",
+   "texture": "muy-rizado",
+   "kind": "afro"
+  },
+  {
+   "id": "g3-bob",
+   "label": "Bob",
+   "length": "corto",
+   "texture": "lacio",
+   "kind": "mesh"
+  },
+  {
+   "id": "g3-medio-ondulado",
+   "label": "Media melena ondulada",
+   "length": "medio",
+   "texture": "ondulado",
+   "kind": "mesh",
+   "gather": "g3-coleta"
+  },
+  {
+   "id": "g3-medio-rizado",
+   "hidden": true,
+   "label": "Media melena rizada",
+   "length": "medio",
+   "texture": "rizado",
+   "kind": "mesh"
+  },
+  {
+   "id": "g3-largo",
+   "label": "Largo lacio",
+   "length": "largo",
+   "texture": "lacio",
+   "kind": "mesh",
+   "gather": "g3-coleta"
+  },
+  {
+   "id": "g3-largo-ondulado",
+   "label": "Largo ondulado",
+   "length": "largo",
+   "texture": "ondulado",
+   "kind": "mesh",
+   "gather": "g3-coleta"
+  },
+  {
+   "id": "muy-largo-lacio",
+   "hidden": true,
+   "label": "Muy largo lacio",
+   "length": "muy-largo",
+   "texture": "lacio",
+   "kind": "loose",
+   "gather": "mono-bajo"
+  },
+  {
+   "id": "muy-largo-rizado",
+   "hidden": true,
+   "label": "Muy largo rizado",
+   "length": "muy-largo",
+   "texture": "rizado",
+   "kind": "loose",
+   "gather": "mono-rizado"
+  },
+  {
+   "id": "mono-bajo",
+   "label": "Moño bajo",
+   "length": "largo",
+   "texture": "lacio",
+   "kind": "bun",
+   "recogido": true,
+   "variant": true
+  },
+  {
+   "id": "mono-rizado",
+   "label": "Moño rizado",
+   "length": "largo",
+   "texture": "rizado",
+   "kind": "bun",
+   "recogido": true,
+   "variant": true
+  }
+ ],
+ "colors": [
+  {
+   "id": "negro",
+   "label": "Negro",
+   "hex": "#1d1815",
+   "brow": "#261c17"
+  },
+  {
+   "id": "castano-muy-oscuro",
+   "label": "Castaño muy oscuro",
+   "hex": "#2f231c",
+   "brow": "#33241c"
+  },
+  {
+   "id": "castano-oscuro",
+   "label": "Castaño oscuro",
+   "hex": "#422d21",
+   "brow": "#402b20"
+  },
+  {
+   "id": "castano",
+   "label": "Castaño",
+   "hex": "#5a3c29",
+   "brow": "#513625"
+  },
+  {
+   "id": "castano-claro",
+   "label": "Castaño claro",
+   "hex": "#7c5538",
+   "brow": "#684730"
+  },
+  {
+   "id": "rubio-oscuro",
+   "label": "Rubio oscuro",
+   "hex": "#94704a",
+   "brow": "#795a3c"
+  },
+  {
+   "id": "rubio",
+   "label": "Rubio",
+   "hex": "#b69262",
+   "brow": "#91724d"
+  },
+  {
+   "id": "rubio-claro",
+   "label": "Rubio claro",
+   "hex": "#d1b487",
+   "brow": "#a48a67"
+  },
+  {
+   "id": "cobrizo",
+   "label": "Cobrizo",
+   "hex": "#8e4a2b",
+   "brow": "#754026"
+  },
+  {
+   "id": "gris-natural",
+   "label": "Gris natural",
+   "hex": "#9a948d",
+   "brow": "#7d736b"
+  }
+ ],
+ "default": {
+  "style": "g3-medio-ondulado",
+  "color": "castano-oscuro"
+ },
+ "note": "G3 (integrado el 11-11-2026): 7 peinados de malla aprobados (g3-*). Se conservan de F3 los que G3 no cubre (pixie, corto rizado, afro corto, muy largo lacio y rizado) y los moños «mono-bajo» y «mono-rizado» como variantes recogidas. «aliases» traduce los identificadores de F3 sustituidos.",
+ "aliases": {
+  "largo-lacio": "g3-largo",
+  "largo-ondulado": "g3-largo-ondulado",
+  "medio-ondulado": "g3-medio-ondulado",
+  "bob": "g3-bob",
+  "coleta": "g3-coleta",
+  "medio-rizado": "g3-medio-rizado"
+ }
+}

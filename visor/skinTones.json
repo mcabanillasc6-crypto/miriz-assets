@@ -1,0 +1,237 @@
+{
+ "schema": "miriz.avatar2.skinTones/1",
+ "undertoneLabels": {
+  "calido": "Cálido",
+  "neutro": "Neutro",
+  "frio": "Frío"
+ },
+ "default": {
+  "tone": "tono-3",
+  "undertone": "neutro"
+ },
+ "browDefault": "#3b271c",
+ "tones": [
+  {
+   "id": "tono-1",
+   "label": "Claro",
+   "L": 80.0,
+   "undertones": {
+    "calido": {
+     "skin": "#e4c0a3",
+     "lip": "#d5888c",
+     "blush": "#e7b39b",
+     "lab": [
+      80.0,
+      8.5,
+      19.5
+     ]
+    },
+    "neutro": {
+     "skin": "#e2c0ab",
+     "lip": "#d38894",
+     "blush": "#e5b3a3",
+     "lab": [
+      80.0,
+      9.0,
+      15.0
+     ]
+    },
+    "frio": {
+     "skin": "#e3bfb2",
+     "lip": "#d4889b",
+     "blush": "#e6b2ab",
+     "lab": [
+      80.0,
+      11.0,
+      11.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "tono-2",
+   "label": "Claro medio",
+   "L": 73.8,
+   "undertones": {
+    "calido": {
+     "skin": "#d3af92",
+     "lip": "#c57b7b",
+     "blush": "#d6a28a",
+     "lab": [
+      73.8,
+      8.9,
+      19.8
+     ]
+    },
+    "neutro": {
+     "skin": "#d1af9a",
+     "lip": "#c37b83",
+     "blush": "#d4a292",
+     "lab": [
+      73.8,
+      9.4,
+      15.3
+     ]
+    },
+    "frio": {
+     "skin": "#d2ada1",
+     "lip": "#c47a8b",
+     "blush": "#d5a199",
+     "lab": [
+      73.8,
+      11.4,
+      11.3
+     ]
+    }
+   }
+  },
+  {
+   "id": "tono-3",
+   "label": "Medio",
+   "L": 61.3,
+   "undertones": {
+    "calido": {
+     "skin": "#b18d71",
+     "lip": "#a5615c",
+     "blush": "#b4816a",
+     "lab": [
+      61.3,
+      9.8,
+      20.3
+     ]
+    },
+    "neutro": {
+     "skin": "#b08d79",
+     "lip": "#a46065",
+     "blush": "#b38172",
+     "lab": [
+      61.3,
+      10.3,
+      15.8
+     ]
+    },
+    "frio": {
+     "skin": "#b18c80",
+     "lip": "#a55f6c",
+     "blush": "#b47f79",
+     "lab": [
+      61.3,
+      12.3,
+      11.8
+     ]
+    }
+   }
+  },
+  {
+   "id": "tono-4",
+   "label": "Medio profundo",
+   "L": 48.9,
+   "undertones": {
+    "calido": {
+     "skin": "#916d52",
+     "lip": "#874840",
+     "blush": "#93614b",
+     "lab": [
+      48.9,
+      10.7,
+      20.5
+     ]
+    },
+    "neutro": {
+     "skin": "#906d5a",
+     "lip": "#864847",
+     "blush": "#926153",
+     "lab": [
+      48.9,
+      11.2,
+      16.0
+     ]
+    },
+    "frio": {
+     "skin": "#916c60",
+     "lip": "#87464f",
+     "blush": "#935f59",
+     "lab": [
+      48.9,
+      13.2,
+      12.0
+     ]
+    }
+   }
+  },
+  {
+   "id": "tono-5",
+   "label": "Profundo",
+   "L": 36.4,
+   "undertones": {
+    "calido": {
+     "skin": "#714e35",
+     "lip": "#682e26",
+     "blush": "#72422f",
+     "lab": [
+      36.4,
+      11.6,
+      20.6
+     ]
+    },
+    "neutro": {
+     "skin": "#704e3c",
+     "lip": "#682e2d",
+     "blush": "#724236",
+     "lab": [
+      36.4,
+      12.1,
+      16.1
+     ]
+    },
+    "frio": {
+     "skin": "#724d43",
+     "lip": "#692d33",
+     "blush": "#73413c",
+     "lab": [
+      36.4,
+      14.1,
+      12.1
+     ]
+    }
+   }
+  },
+  {
+   "id": "tono-6",
+   "label": "Muy profundo",
+   "L": 24.0,
+   "undertones": {
+    "calido": {
+     "skin": "#52311b",
+     "lip": "#4b1608",
+     "blush": "#532615",
+     "lab": [
+      24.0,
+      12.5,
+      20.5
+     ]
+    },
+    "neutro": {
+     "skin": "#523122",
+     "lip": "#4b1613",
+     "blush": "#52251c",
+     "lab": [
+      24.0,
+      13.0,
+      16.0
+     ]
+    },
+    "frio": {
+     "skin": "#533028",
+     "lip": "#4c141a",
+     "blush": "#542422",
+     "lab": [
+      24.0,
+      15.0,
+      12.0
+     ]
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,448 @@
+{
+ "note": "Combinaciones de prueba construidas por Claude a partir de la tabla de tallas MIRIZ (busto 76–108) y siluetas habituales. No son medidas de clientas reales.",
+ "real": [
+  {
+   "id": "R01",
+   "label": "XS rectángulo",
+   "m": {
+    "height": 150.0,
+    "bust": 78.0,
+    "waist": 62.0,
+    "hips": 84.0
+   }
+  },
+  {
+   "id": "R02",
+   "label": "XS promedio",
+   "m": {
+    "height": 154.0,
+    "bust": 80.0,
+    "underbust": 68.0,
+    "waist": 61.0,
+    "hips": 87.0,
+    "shoulders": 34.0
+   }
+  },
+  {
+   "id": "R03",
+   "label": "S pera",
+   "m": {
+    "height": 152.0,
+    "bust": 82.0,
+    "underbust": 68.0,
+    "waist": 64.0,
+    "hips": 94.0
+   }
+  },
+  {
+   "id": "R04",
+   "label": "S promedio",
+   "m": {
+    "height": 158.0,
+    "bust": 86.0,
+    "underbust": 72.0,
+    "waist": 66.0,
+    "hips": 92.0,
+    "shoulders": 35.5
+   }
+  },
+  {
+   "id": "R05",
+   "label": "S reloj de arena",
+   "m": {
+    "height": 160.0,
+    "bust": 86.0,
+    "underbust": 70.0,
+    "waist": 64.0,
+    "hips": 94.0
+   }
+  },
+  {
+   "id": "R06",
+   "label": "M promedio",
+   "m": {
+    "height": 162.0,
+    "bust": 92.0,
+    "underbust": 76.0,
+    "waist": 72.0,
+    "hips": 98.0,
+    "shoulders": 37.0
+   }
+  },
+  {
+   "id": "R07",
+   "label": "M pera",
+   "m": {
+    "height": 153.0,
+    "bust": 88.0,
+    "underbust": 74.0,
+    "waist": 70.0,
+    "hips": 102.0
+   }
+  },
+  {
+   "id": "R08",
+   "label": "M manzana",
+   "m": {
+    "height": 156.0,
+    "bust": 90.0,
+    "underbust": 78.0,
+    "waist": 80.0,
+    "hips": 96.0
+   }
+  },
+  {
+   "id": "R09",
+   "label": "M reloj de arena",
+   "m": {
+    "height": 162.0,
+    "bust": 90.0,
+    "underbust": 74.0,
+    "waist": 68.0,
+    "hips": 98.0,
+    "shoulders": 36.0
+   }
+  },
+  {
+   "id": "R10",
+   "label": "M rectángulo",
+   "m": {
+    "height": 165.0,
+    "bust": 88.0,
+    "underbust": 75.0,
+    "waist": 76.0,
+    "hips": 94.0
+   }
+  },
+  {
+   "id": "R11",
+   "label": "L promedio",
+   "m": {
+    "height": 165.0,
+    "bust": 98.0,
+    "underbust": 81.0,
+    "waist": 79.0,
+    "hips": 104.0,
+    "shoulders": 38.5
+   }
+  },
+  {
+   "id": "R12",
+   "label": "L pera",
+   "m": {
+    "height": 154.0,
+    "bust": 94.0,
+    "underbust": 80.0,
+    "waist": 78.0,
+    "hips": 110.0
+   }
+  },
+  {
+   "id": "R13",
+   "label": "L manzana",
+   "m": {
+    "height": 158.0,
+    "bust": 100.0,
+    "underbust": 84.0,
+    "waist": 90.0,
+    "hips": 104.0,
+    "shoulders": 38.0
+   }
+  },
+  {
+   "id": "R14",
+   "label": "L reloj de arena",
+   "m": {
+    "height": 163.0,
+    "bust": 98.0,
+    "underbust": 80.0,
+    "waist": 76.0,
+    "hips": 106.0
+   }
+  },
+  {
+   "id": "R15",
+   "label": "L triángulo invertido",
+   "m": {
+    "height": 166.0,
+    "bust": 100.0,
+    "underbust": 82.0,
+    "waist": 80.0,
+    "hips": 98.0,
+    "shoulders": 39.0
+   }
+  },
+  {
+   "id": "R16",
+   "label": "XL promedio",
+   "m": {
+    "height": 156.0,
+    "bust": 104.0,
+    "underbust": 88.0,
+    "waist": 88.0,
+    "hips": 112.0
+   }
+  },
+  {
+   "id": "R17",
+   "label": "XL pera",
+   "m": {
+    "height": 152.0,
+    "bust": 100.0,
+    "underbust": 86.0,
+    "waist": 86.0,
+    "hips": 116.0
+   }
+  },
+  {
+   "id": "R18",
+   "label": "XL manzana",
+   "m": {
+    "height": 160.0,
+    "bust": 108.0,
+    "underbust": 92.0,
+    "waist": 98.0,
+    "hips": 110.0,
+    "shoulders": 39.0
+   }
+  },
+  {
+   "id": "R19",
+   "label": "XL reloj de arena",
+   "m": {
+    "height": 165.0,
+    "bust": 106.0,
+    "underbust": 88.0,
+    "waist": 84.0,
+    "hips": 114.0
+   }
+  },
+  {
+   "id": "R20",
+   "label": "XXL promedio",
+   "m": {
+    "height": 158.0,
+    "bust": 112.0,
+    "underbust": 96.0,
+    "waist": 98.0,
+    "hips": 120.0
+   }
+  },
+  {
+   "id": "R21",
+   "label": "Baja, XS",
+   "m": {
+    "height": 145.0,
+    "bust": 76.0,
+    "underbust": 63.0,
+    "waist": 60.0,
+    "hips": 82.0
+   }
+  },
+  {
+   "id": "R22",
+   "label": "Baja, M",
+   "m": {
+    "height": 147.0,
+    "bust": 88.0,
+    "underbust": 74.0,
+    "waist": 72.0,
+    "hips": 96.0
+   }
+  },
+  {
+   "id": "R23",
+   "label": "Alta, S",
+   "m": {
+    "height": 175.0,
+    "bust": 84.0,
+    "underbust": 70.0,
+    "waist": 66.0,
+    "hips": 92.0,
+    "shoulders": 37.0
+   }
+  },
+  {
+   "id": "R24",
+   "label": "Alta, M",
+   "m": {
+    "height": 178.0,
+    "bust": 90.0,
+    "underbust": 76.0,
+    "waist": 72.0,
+    "hips": 98.0,
+    "shoulders": 38.0
+   }
+  },
+  {
+   "id": "R25",
+   "label": "Alta, L",
+   "m": {
+    "height": 172.0,
+    "bust": 98.0,
+    "underbust": 82.0,
+    "waist": 80.0,
+    "hips": 106.0
+   }
+  },
+  {
+   "id": "R26",
+   "label": "Busto alto (copa grande)",
+   "m": {
+    "height": 160.0,
+    "bust": 96.0,
+    "underbust": 72.0,
+    "waist": 68.0,
+    "hips": 94.0
+   }
+  },
+  {
+   "id": "R27",
+   "label": "Busto pequeño",
+   "m": {
+    "height": 162.0,
+    "bust": 80.0,
+    "underbust": 72.0,
+    "waist": 66.0,
+    "hips": 92.0
+   }
+  },
+  {
+   "id": "R28",
+   "label": "Cadera muy marcada",
+   "m": {
+    "height": 158.0,
+    "bust": 86.0,
+    "underbust": 70.0,
+    "waist": 64.0,
+    "hips": 106.0
+   }
+  },
+  {
+   "id": "R29",
+   "label": "Cintura amplia",
+   "m": {
+    "height": 160.0,
+    "bust": 92.0,
+    "underbust": 80.0,
+    "waist": 86.0,
+    "hips": 98.0
+   }
+  },
+  {
+   "id": "R30",
+   "label": "Prueba D1 extrema (E1)",
+   "m": {
+    "height": 185.0,
+    "bust": 80.0,
+    "waist": 60.0,
+    "hips": 88.0,
+    "shoulders": 35.0
+   }
+  }
+ ],
+ "incoherent": [
+  {
+   "id": "X01",
+   "label": "Cintura mayor que la cadera por 20 cm",
+   "m": {
+    "height": 160,
+    "bust": 90,
+    "waist": 110,
+    "hips": 90
+   }
+  },
+  {
+   "id": "X02",
+   "label": "Busto muy bajo para la estatura",
+   "m": {
+    "height": 180,
+    "bust": 58,
+    "waist": 55,
+    "hips": 80
+   }
+  },
+  {
+   "id": "X03",
+   "label": "Cadera extrema",
+   "m": {
+    "height": 155,
+    "bust": 86,
+    "waist": 66,
+    "hips": 160
+   }
+  },
+  {
+   "id": "X04",
+   "label": "Estatura fuera de rango (120 cm)",
+   "m": {
+    "height": 120,
+    "bust": 80,
+    "waist": 62,
+    "hips": 86
+   }
+  },
+  {
+   "id": "X05",
+   "label": "Bajo busto mayor que el busto",
+   "m": {
+    "height": 160,
+    "bust": 80,
+    "underbust": 90,
+    "waist": 70,
+    "hips": 95
+   }
+  },
+  {
+   "id": "X06",
+   "label": "Hombros de 60 cm",
+   "m": {
+    "height": 160,
+    "bust": 90,
+    "waist": 70,
+    "hips": 96,
+    "shoulders": 60
+   }
+  },
+  {
+   "id": "X07",
+   "label": "Cintura de 30 cm",
+   "m": {
+    "height": 160,
+    "bust": 86,
+    "waist": 30,
+    "hips": 94
+   }
+  },
+  {
+   "id": "X08",
+   "label": "Busto 150 y cadera 80",
+   "m": {
+    "height": 160,
+    "bust": 150,
+    "waist": 70,
+    "hips": 80
+   }
+  },
+  {
+   "id": "X09",
+   "label": "Estatura 230 cm",
+   "m": {
+    "height": 230,
+    "bust": 90,
+    "waist": 70,
+    "hips": 96
+   }
+  },
+  {
+   "id": "X10",
+   "label": "Cadera menor que la cintura por 12 cm",
+   "m": {
+    "height": 165,
+    "bust": 95,
+    "waist": 100,
+    "hips": 88
+   }
+  }
+ ]
+}
