@@ -1,6 +1,7 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Probador MIRIZ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<script>(function(){try{var q=new URLSearchParams(location.search),e=q.get('embed')==='1'||(q.get('embed')!=='0'&&window.self!==window.top);if(e){var d=document.documentElement;d.classList.add('embed');var th=q.get('theme')||'light';if(th!=='auto')d.setAttribute('data-theme',th)}}catch(x){}})()</script>
 <style>
 /* Layout: escena 3D a pantalla completa + panel de control (lateral en escritorio, hoja inferior en celular) */
 :root {
@@ -343,24 +344,32 @@ details.fidd p { margin: 6px 0 0; }
 @media (max-width: 360px) { .catchips .chipbtn { font-size: 12px; } }
 @media (min-width: 1000px) and (max-width: 1239px) { .catchips { gap: 5px; } .catchips .chipbtn { font-size: 12px; padding: 9px 2px; letter-spacing: -.01em; } }
 
-/* Modo embebido dentro de la tienda MIRIZ: evita logo/carrito duplicados y se integra mejor */
-html.is-embedded .topbar,
-html.is-embedded #drawer {
-  display: none !important;
+/* B40 · modo embebido (iframe dentro de la tienda): sin barra superior ni carrito propios, claro por defecto, pestañas arriba del panel */
+.embedtag { display: none; }
+html.embed .topbar { display: none; }
+html.embed .shop { grid-template-rows: minmax(0, 1fr); }
+html.embed .embedtag { display: block; position: absolute; left: 10px; top: 8px; z-index: 5; font: 500 10px var(--f-data); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); opacity: .75; pointer-events: none; }
+html.embed .stage .zoomctl { top: 8px; right: 8px; }
+@media (min-width: 760px) and (max-width: 1179px) {
+  html.embed .layout { grid-template-columns: minmax(0, 46%) minmax(0, 1fr); grid-template-rows: auto minmax(0, 1fr); grid-template-areas: "stage nav" "stage panel"; }
+  html.embed #p-avatar, html.embed #p-prendas { grid-area: panel; border: 0; border-left: 1px solid var(--line); min-height: 0; }
+  html.embed .secnav { display: grid; grid-template-columns: 1fr 1fr; padding: 0 var(--gutr) 0 var(--gut); border-top: 0; border-bottom: 1px solid var(--line); border-left: 1px solid var(--line); background: var(--panel); }
+  html.embed .secnav button { min-height: 42px; border-top: 0; border-bottom: 3px solid transparent; }
+  html.embed .secnav button[aria-selected="true"] { border-bottom-color: var(--accent); color: var(--accent); }
+  html.embed .layout[data-sec="avatar"] #p-prendas, html.embed .layout[data-sec="prendas"] #p-avatar { display: none; }
+  html.embed .pbody { padding-top: 12px; padding-bottom: 16px; }
+  html.embed .pfoot { padding-top: 8px; padding-bottom: 8px; } html.embed .pfoot .primary { min-height: 42px; } html.embed .pfoot .note { display: none; }
 }
-html.is-embedded body,
-html.is-embedded .shop {
-  height: 100%;
-  min-height: 100%;
-  background: transparent;
-}
-html.is-embedded .layout {
-  height: 100%;
-}
+@media (max-width: 759px) { html.embed .layout { grid-template-rows: clamp(220px, 42dvh, 460px) minmax(0, 1fr) auto; } }
+
+/* ===== B41 · modo embebido: la tienda es dueña de ficha, detalle del look y compra ===== */
+html.embed #outfit, html.embed #p-prendas .pfoot { display: none; }
+html.embed .sgdemo { color: var(--muted); font-size: 12px; margin: 6px 0 0; }
+html.embed #p-prendas .pbody { padding-bottom: 16px; }
 </style></head><body>
 <div class="shop" id="shop">
   <div class="topbar" role="banner">
-    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B39</span></div>
+    <div class="brand"><b>MIRIZ</b><span>Tu estilo, en tus manos</span><span class="build">build B41</span></div>
     <div class="pagetitle">Probador 3D</div>
     <button class="cartbtn" id="cartbtn" aria-label="Abrir carrito (0 prendas)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span class="lbl2">Carrito</span><span class="n" id="cartn">0</span></button>
   </div>
@@ -375,6 +384,7 @@ html.is-embedded .layout {
       <div class="pfoot"><button class="primary" id="save">Guardar mi avatar</button><p class="note" id="save-note" role="status"></p></div>
     </section>
     <section class="stage" aria-label="Avatar 3D">
+      <span class="embedtag">build B41</span>
       <canvas id="c" aria-label="Vista 3D del avatar: arrastre para girar, pellizque o use los botones + y − para acercar"></canvas>
       <div class="hud"><div class="badge"></div><div class="stats" id="stats"></div></div>
       <div class="zoomctl" id="zoomctl"><button id="zin" aria-label="Acercar">+</button><button id="zout" aria-label="Alejar">−</button></div>
@@ -433,28 +443,6 @@ html.is-embedded .layout {
       <details class="more" id="techface"><summary>Controles técnicos del rostro (equipo)</summary><p class="note">Los 31 controles internos. Las opciones de «Rostro y piel» los combinan; moverlos aquí no cambia la elección guardada.</p></details>
     </div>
   </div>
-<script>window.MIRIZ_GLB_EXT = ".glb";   /* B39: el visor estático solo trae .glb (no hay .b64.txt) */</script>
-<script type="module" src="app.js?v=B39"></script><script type="module" src="shop.js?v=B39"></script>
-<script>
-(function () {
-  const params = new URLSearchParams(window.location.search);
-  const isEmbedded = params.get('embed') === '1' || window.self !== window.top;
-
-  if (isEmbedded) {
-    document.documentElement.classList.add('is-embedded');
-  }
-
-  window.addEventListener('message', (event) => {
-    const data = event.data;
-    if (!data || typeof data !== 'object') return;
-    if (data.type === 'MIRIZ_PRENDA_SELECCIONADA') {
-      window.dispatchEvent(new CustomEvent('miriz:garment-selected', { detail: data.payload }));
-    }
-  });
-
-  if (isEmbedded && window.parent && window.parent !== window) {
-    window.parent.postMessage({ source: 'MIRIZ_PROBADOR', type: 'MIRIZ_PROBADOR_READY' }, '*');
-  }
-})();
-</script>
+<script>window.MIRIZ_GLB_EXT = ".glb";   /* B41: el visor estático solo trae .glb (no hay .b64.txt) */</script>
+<script type="module" src="app.js?v=B41"></script><script type="module" src="shop.js?v=B41"></script>
 </body></html>
