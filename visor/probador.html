@@ -342,6 +342,21 @@ details.fidd p { margin: 6px 0 0; }
 }
 @media (max-width: 360px) { .catchips .chipbtn { font-size: 12px; } }
 @media (min-width: 1000px) and (max-width: 1239px) { .catchips { gap: 5px; } .catchips .chipbtn { font-size: 12px; padding: 9px 2px; letter-spacing: -.01em; } }
+
+/* Modo embebido dentro de la tienda MIRIZ: evita logo/carrito duplicados y se integra mejor */
+html.is-embedded .topbar,
+html.is-embedded #drawer {
+  display: none !important;
+}
+html.is-embedded body,
+html.is-embedded .shop {
+  height: 100%;
+  min-height: 100%;
+  background: transparent;
+}
+html.is-embedded .layout {
+  height: 100%;
+}
 </style></head><body>
 <div class="shop" id="shop">
   <div class="topbar" role="banner">
@@ -420,4 +435,26 @@ details.fidd p { margin: 6px 0 0; }
   </div>
 <script>window.MIRIZ_GLB_EXT = ".glb";   /* B39: el visor estático solo trae .glb (no hay .b64.txt) */</script>
 <script type="module" src="app.js?v=B39"></script><script type="module" src="shop.js?v=B39"></script>
+<script>
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const isEmbedded = params.get('embed') === '1' || window.self !== window.top;
+
+  if (isEmbedded) {
+    document.documentElement.classList.add('is-embedded');
+  }
+
+  window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (!data || typeof data !== 'object') return;
+    if (data.type === 'MIRIZ_PRENDA_SELECCIONADA') {
+      window.dispatchEvent(new CustomEvent('miriz:garment-selected', { detail: data.payload }));
+    }
+  });
+
+  if (isEmbedded && window.parent && window.parent !== window) {
+    window.parent.postMessage({ source: 'MIRIZ_PROBADOR', type: 'MIRIZ_PROBADOR_READY' }, '*');
+  }
+})();
+</script>
 </body></html>
